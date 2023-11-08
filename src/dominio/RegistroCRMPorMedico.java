@@ -28,4 +28,3 @@ public class RegistroCRMPorMedico extends BaseIdentificador {
         this.codigoRegistroCRM = codigoRegistroCRM;
     }
 }
-,
