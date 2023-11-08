@@ -2,31 +2,30 @@ package dominio;
 
 public class RegistroCRMPorMedico extends BaseIdentificador {
     
-    private String codigoMedico;
+    private int codigoMedico;
     
-    private String codigoRegistroCRM;
+    private int codigoRegistroCRM;
 
-    public RegistroCRMPorMedico(int codigo, String codigoMedico, String codigoRegistroCRM) {
+    public RegistroCRMPorMedico(int codigo, int codigoMedico, int codigoRegistroCRM) {
         super(codigo);
         this.codigoMedico = codigoMedico;
         this.codigoRegistroCRM = codigoRegistroCRM;
     }
 
-    public String getCodigoMedico() {
+    public int getCodigoMedico() {
         return codigoMedico;
     }
 
-    public void setCodigoMedico(String codigoMedico) {
+    public void setCodigoMedico(int codigoMedico) {
         this.codigoMedico = codigoMedico;
     }
 
-    public String getCodigoRegistroCRM() {
+    public int getCodigoRegistroCRM() {
         return codigoRegistroCRM;
     }
 
-    public void setCodigoRegistroCRM(String codigoRegistroCRM) {
+    public void setCodigoRegistroCRM(int codigoRegistroCRM) {
         this.codigoRegistroCRM = codigoRegistroCRM;
     }
-
-    
 }
+,
