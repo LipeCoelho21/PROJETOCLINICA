@@ -8,7 +8,6 @@ public class Endereco extends BaseIdentificador {
     private int cep;
     private int caixaPostal;
     
-
     public Endereco(int codigo, String logradouro, String complemento, int numero, int cep, int caixaPostal) {
         super(codigo);
         this.logradouro = logradouro;
@@ -55,6 +54,19 @@ public class Endereco extends BaseIdentificador {
     }
 
     public void setCaixaPostal(int caixaPostal) {
+
         this.caixaPostal = caixaPostal;
     }
+
+    @Override
+    public String toString() {
+     
+        String msg = "";
+        msg += "BaseIdentificador [codigo=" + codigo + "]\n";
+        msg += "Endereco [logradouro=" + logradouro + ", complemento=" + complemento + ", numero=" + numero + ", cep="
+                + cep + ", caixaPostal=" + caixaPostal + "]";
+        return msg;
+    }
 }
+    
+

@@ -3,7 +3,7 @@ package dominio;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class BasePessoa extends BaseIdentificador {
+public abstract class BasePessoa extends BaseIdentificador {
     
     protected String nome;
     protected String email;
@@ -69,7 +69,8 @@ public class BasePessoa extends BaseIdentificador {
     }
     public void setEnderecos(ArrayList<Endereco> enderecos) {
         this.enderecos = enderecos;
-    }
+    }  
 }
+
 
    

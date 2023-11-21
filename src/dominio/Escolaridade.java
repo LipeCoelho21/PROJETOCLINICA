@@ -6,5 +6,14 @@ public class Escolaridade extends BaseComum {
         super(codigo, descricao);
     }
 
+    @Override
+    public String toString() {
+        String msg = "";
+        msg += "BaseIdentificador [codigo=" + codigo + "]\n";
+        msg += "BaseComum [descricao=" + descricao + "]";
+        msg += "Escolaridade []";
+        return msg;
+    }
+    
     
 }

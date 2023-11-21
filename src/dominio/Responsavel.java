@@ -20,5 +20,14 @@ public class Responsavel extends BasePessoa {
         this.relacionamento = relacionamento;
     }
 
-    
+    @Override
+    public String toString() {
+        String msg = "";
+        msg += "BaseIdentificador [codigo=" + codigo + "]\n";
+        msg += "BasePessoa [nome=" + nome + ", email=" + email + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento="
+                + dataNascimento + ", profissão=" + profissão + ", escolaridade=" + escolaridade + ", enderecos="
+                + enderecos + "]\n";
+        msg += "Responsavel [relacionamento=" + relacionamento + "]\n";
+        return msg;
+    }  
 }

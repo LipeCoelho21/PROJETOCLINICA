@@ -1,6 +1,6 @@
 package dominio;
 
-public class BaseComum extends BaseIdentificador {
+public abstract class BaseComum extends BaseIdentificador {
     
     protected String descricao;
 
